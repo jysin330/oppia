@@ -456,3 +456,4 @@ class UploadExplorationHandler(
         else:
             raise self.InvalidInputException(
                 'This server does not allow file uploads.')
+    
