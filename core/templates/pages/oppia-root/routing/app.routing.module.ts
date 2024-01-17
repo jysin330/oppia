@@ -34,7 +34,8 @@ const routes: Route[] = [
   },
   {
     path: AppConstants.PAGES_REGISTERED_WITH_FRONTEND.ADMIN.ROUTE,
-    loadChildren: () => import('pages/creator-dashboard-page/creator-dashboard-page.module')
+    loadChildren: () => import(
+      'pages/creator-dashboard-page/creator-dashboard-page.module')
       .then(m => m.CreatorDashboardPageModule),
     canActivate: [IsLoggedInGuard]
   },
