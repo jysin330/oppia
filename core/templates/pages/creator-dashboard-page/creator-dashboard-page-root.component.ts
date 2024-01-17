@@ -22,7 +22,7 @@ import { BaseRootComponent, MetaTagData } from 'pages/base-root.component';
 
 @Component({
   selector: 'oppia-creator-dashboard-page-root',
-    templateUrl: './creator-dashboard-page-root.component.html',
+  templateUrl: './creator-dashboard-page-root.component.html',
 })
 export class CreatorDashboardPageRootComponent extends BaseRootComponent {
   title: string = AppConstants.PAGES_REGISTERED_WITH_FRONTEND.ADMIN.TITLE;
