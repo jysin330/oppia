@@ -33,6 +33,12 @@ const routes: Route[] = [
     canActivate: [IsLoggedInGuard]
   },
   {
+    path: AppConstants.PAGES_REGISTERED_WITH_FRONTEND.ADMIN.ROUTE,
+    loadChildren: () => import('pages/creator-dashboard-page/creator-dashboard-page.module')
+      .then(m => m.CreatorDashboardPageModule),
+    canActivate: [IsLoggedInGuard]
+  },
+  {
     path: AppConstants.PAGES_REGISTERED_WITH_FRONTEND.MODERATOR.ROUTE,
     loadChildren: () => import('pages/moderator-page/moderator-page.module')
       .then(m => m.ModeratorPageModule),
