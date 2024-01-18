@@ -510,7 +510,8 @@ class CreatorDashboardHandlerTests(test_utils.GenericTestBase):
 
     def test_creator_dashboard_page(self) -> None:
         """Test '/creator-dashboard' returns a 200 response."""
-        self.get_html_response('/creator-dashboard', expected_status_int=200)
+        self.get_html_response(
+            feconf.CREATOR_DASHBOARD_URL, expected_status_int=200)
 
 
 class CreationButtonsTests(test_utils.GenericTestBase):
